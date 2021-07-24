@@ -5,6 +5,7 @@ export default function Counter() {
 
   const increment = () => setCount(count + 1);
   const decrement = () => setCount(count - 1);
+  const addTwo = () => setCount(count + 2);
 
   return (
     <div>
@@ -14,6 +15,7 @@ export default function Counter() {
         <h3>Current Count: {count}</h3>
         <button onClick={increment}>Increment</button>
         <button onClick={decrement}>Decrement</button>
+        <button onClick={addTwo}>AddTwo</button>
       </div>
     </div>
   );
